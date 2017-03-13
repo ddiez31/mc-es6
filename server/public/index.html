@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>TodoList</title>
-  </head>
-  <body>
 
-    <script src="./js/app.js"></script>
-  </body>
+<head>
+    <meta charset="utf-8" />
+    <title>TodoList</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" type="text/css" href="./css/knacss.css">
+
+</head>
+
+<body>
+
+    <h1>TODO-LIST ES6</h1>
+    <hr>
+    <strong><label for="nameList">Nom de votre liste</label></strong>
+    <input type="text" id="nameList" name="nameList" />
+    <button type="button" id="new" value="new">Créer une nouvelle liste</button>
+    <hr>
+    <form method="post" action="" value="0">
+        <h5><button type="button" class="favori">Favori</button><label for="title" class="title"> Liste 1</label><input type="text" id="inptitle" name="inptitle" /></h5>
+        <div class="submit">
+            <label for="tache">Tâche à faire</label>
+            <input type="text" id="tache" name="tache" />
+            <button type="button" class="send">Envoyer</button>
+        </div>
+        <ul id="todoList">
+            <li><input id='notchecked' type='checkbox' name='checkbox' /> finir exercice formulaire inscription: merci!</li>
+            <li><input id='notchecked' type='checkbox' name='checkbox' /> faire une pause</li>
+            <li><input id='notchecked' type='checkbox' name='checkbox' /> aller manger</li>
+        </ul>
+        <div class="btn">
+            <button type="button" id="doing" value="doing">Filtrer tâches à faire</button>
+            <button type="button" id="done" value="done">Filtrer tâches effectuées</button>
+            <button type="button" id="all" value="all">Afficher toutes les tâches</button>
+            <button type="button" id="remove" value="remove">Supprimer tâches effectuées</button>
+        </div>
+    </form>
+
+    <div class="send">data json</div>
+    <ul id="list">
+    </ul>
+
+
+
+
+</body>
+<script src="./js/app.js"></script>
+
 </html>
